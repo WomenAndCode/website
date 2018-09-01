@@ -1,469 +1,131 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<meta name="Keywords" content="JavaScript,courses,web development,tutorials,programming,training,learning,lessons,learning group,feminist,women,coding,beginners">
-	<meta name="Description" content="A JavaScript learning group and other courses for women in Vienna.">
-	<title>Women&amp;&amp;Code</title>
-	<link rel="shortcut icon" href="https://s3.eu-central-1.amazonaws.com/www.womenandcode.org/favicon.ico" type="image/x-icon">
-	<link rel="icon" href="https://s3.eu-central-1.amazonaws.com/www.womenandcode.org/favicon.ico" type="image/x-icon">
-	<style class="cp-pen-styles">
-		body {
-		  min-height: 100vh;
-		  background: linear-gradient(to bottom, #f5f5f5 0%, #b4b2b2 70%, #f5f5f5 100%);
-		  font-family: Arial, Helvetica, sans-serif;
-		  overflow: auto;
-		}
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="Keywords" content="JavaScript,courses,web development,tutorials,programming,training,learning,lessons,learning group,feminist,women,coding,beginners">
+    <meta name="Description" content="A JavaScript learning group and other courses for women in Vienna.">
+    <title>Women&amp;&amp;Code</title>
+    <link rel="shortcut icon" href="https://s3.eu-central-1.amazonaws.com/www.womenandcode.org/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="https://s3.eu-central-1.amazonaws.com/www.womenandcode.org/favicon.ico" type="image/x-icon">
+    <title>Women&&Code</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <header>
+        <a href="http://womenandcode.org/"><img src="logo1.png" alt="women and code logo"></a>
+    </header>
+    <main>
+      <section>
+      <div class="container">
+        <h1>Women and Code</h1>
+        <p>Women and Code is a JavaScript learning group for women* in Vienna that happens every second week, starting on 
+          September 18 2018.
+        </p>
+        <p>Join us if you're:</p>
+        <ul>
+          <li>thrilled to learn something new</li>
+          <li>interested in coding/programming</li>
+          <li>excited about UI/UX and front-end development</li>
+          <li>eager to learn how to talk to the developers in your company</li>
+        </ul>
+        <p>The first events are for complete beginners, but feel free to join if you want to connect to other amazing people
+          in Vienna!
+        </p>
+        <ul>
+          <li>The lectures will be held in English</li>
+          <li>Participation is free but you need to reserve your seat with a 9 EUR deposit which will be transferred back on
+            show-up. If you like, you can also <a href="#donate" target="_blank">donate</a> this reservation fee or another amount.
+          </li>
+          <li>Please bring your own laptop!</li>
+        </ul>
+      </div>
+    </section>
+    <section class="events">
+      <div class="container">
+      <h1>Our next events</h1>
+      <a href="https://www.meetup.com/WomenAndCode/events/khpndqyxmbxb/" target="_blank">Kick-off Event 18.09.2018</a><br>
+      <a href="https://www.meetup.com/WomenAndCode/events/gdwtdqyxnbdb/" target="_blank">Event II 02.09.2018</a>
+      <p>We will teach lecture 1 at all events in seperate groups. <br>
+        <a href="">Problems</a> to register or <a href="#full">event full</a>?</p>
+      </div>
+    </section>
+    <section class="mission">
+      <div class="container">
+      <h1>Our Mission</h1>
+      <h2>It is important to inspire women to excel in technology</h2>
+      <p>Diversity is very important for healthy networks, work relationships and our society in general.
+        As positive role models we want to inspire other women to join the field of software engineering.
+      </p>
+      <h2>We want to have an impact on our city</h2>
+      <p>A new non-profit feminist network and meetyp/event-series brings more women into tech and encourages
+        women to help other women.
 
-		.text {
-		  position: absolute;
-		  width: 60%;
-		  left: 10px;
-		}
-
-		.rocket {
-		  position: absolute;
-		  top: 20%;
-		  width: 80px;
-		  left: calc(75% - 60px);
-		}
-		.rocket .rocket-body {
-		  width: 80px;
-		  left: calc(50% - 50px);
-		  animation: bounce 0.5s infinite;
-		}
-		.rocket .rocket-body .body {
-		  background-color: #dadada;
-		  height: 180px;
-		  left: calc(50% - 50px);
-		  border-top-right-radius: 100%;
-		  border-top-left-radius: 100%;
-		  border-bottom-left-radius: 50%;
-		  border-bottom-right-radius: 50%;
-		  border-top: 5px solid #f5f5f5;
-		}
-		.rocket .rocket-body:before {
-		  content: '';
-		  position: absolute;
-		  left: calc(50% - 24px);
-		  width: 48px;
-		  height: 13px;
-		  background-color: #554842;
-		  bottom: -13px;
-		  border-bottom-right-radius: 60%;
-		  border-bottom-left-radius: 60%;
-		}
-		.rocket .window {
-		  position: absolute;
-		  width: 40px;
-		  height: 40px;
-		  border-radius: 100%;
-		  background-color: #a75248;
-		  left: calc(50% - 25px);
-		  top: 40px;
-		  border: 5px solid #b4b2b2;
-		}
-		.rocket .fin {
-		  position: absolute;
-		  z-index: -100;
-		  height: 55px;
-		  width: 50px;
-		  background-color: #a75248;
-		}
-		.rocket .fin-left {
-		  left: -30px;
-		  top: calc(100% - 55px);
-		  border-top-left-radius: 80%;
-		  border-bottom-left-radius: 20%;
-		}
-		.rocket .fin-right {
-		  right: -30px;
-		  top: calc(100% - 55px);
-		  border-top-right-radius: 80%;
-		  border-bottom-right-radius: 20%;
-		}
-		.rocket .exhaust-flame {
-		  position: absolute;
-		  top: 90%;
-		  width: 28px;
-		  background: linear-gradient(to bottom, transparent 10%, #f5f5f5 100%);
-		  height: 150px;
-		  left: calc(50% - 14px);
-		  animation: exhaust 0.2s infinite;
-		}
-		.rocket .exhaust-fumes li {
-		  width: 60px;
-		  height: 60px;
-		  background-color: #f5f5f5;
-		  list-style: none;
-		  position: absolute;
-		  border-radius: 100%;
-		}
-		.rocket .exhaust-fumes li:first-child {
-		  width: 200px;
-		  height: 200px;
-		  bottom: -300px;
-		  animation: fumes 5s infinite;
-		}
-		.rocket .exhaust-fumes li:nth-child(2) {
-		  width: 150px;
-		  height: 150px;
-		  left: -120px;
-		  top: 260px;
-		  animation: fumes 3.2s infinite;
-		}
-		.rocket .exhaust-fumes li:nth-child(3) {
-		  width: 120px;
-		  height: 120px;
-		  left: -40px;
-		  top: 330px;
-		  animation: fumes 3s 1s infinite;
-		}
-		.rocket .exhaust-fumes li:nth-child(4) {
-		  width: 100px;
-		  height: 100px;
-		  left: -170px;
-		  animation: fumes 4s 2s infinite;
-		  top: 380px;
-		}
-		.rocket .exhaust-fumes li:nth-child(5) {
-		  width: 130px;
-		  height: 130px;
-		  left: -120px;
-		  top: 350px;
-		  animation: fumes 5s infinite;
-		}
-		.rocket .exhaust-fumes li:nth-child(6) {
-		  width: 200px;
-		  height: 200px;
-		  left: -60px;
-		  top: 280px;
-		  animation: fumes2 10s infinite;
-		}
-		.rocket .exhaust-fumes li:nth-child(7) {
-		  width: 100px;
-		  height: 100px;
-		  left: -100px;
-		  top: 320px;
-		}
-		.rocket .exhaust-fumes li:nth-child(8) {
-		  width: 110px;
-		  height: 110px;
-		  left: 70px;
-		  top: 340px;
-		}
-		.rocket .exhaust-fumes li:nth-child(9) {
-		  width: 90px;
-		  height: 90px;
-		  left: 200px;
-		  top: 380px;
-		  animation: fumes 20s infinite;
-		}
-
-		.star li {
-		  list-style: none;
-		  position: absolute;
-		}
-		.star li:before, .star li:after {
-		  content: '';
-		  position: absolute;
-		  background-color: #f5f5f5;
-		}
-		.star li:before {
-		  width: 10px;
-		  height: 2px;
-		  border-radius: 50%;
-		}
-		.star li:after {
-		  height: 8px;
-		  width: 2px;
-		  left: 4px;
-		  top: -3px;
-		}
-		.star li:first-child {
-		  top: -30px;
-		  left: -210px;
-		  animation: twinkle 0.4s infinite;
-		}
-		.star li:nth-child(2) {
-		  top: 0;
-		  left: 60px;
-		  animation: twinkle 0.5s infinite;
-		}
-		.star li:nth-child(2):before {
-		  height: 1px;
-		  width: 5px;
-		}
-		.star li:nth-child(2):after {
-		  width: 1px;
-		  height: 5px;
-		  top: -2px;
-		  left: 2px;
-		}
-		.star li:nth-child(3) {
-		  left: 120px;
-		  top: 220px;
-		  animation: twinkle 1s infinite;
-		}
-		.star li:nth-child(4) {
-		  left: -100px;
-		  top: 200px;
-		  animation: twinkle 0.5s ease infinite;
-		}
-		.star li:nth-child(5) {
-		  left: 170px;
-		  top: 100px;
-		  animation: twinkle 0.4s ease infinite;
-		}
-		.star li:nth-child(6) {
-		  top: 87px;
-		  left: -79px;
-		  animation: twinkle 0.2s infinite;
-		}
-		.star li:nth-child(6):before {
-		  height: 1px;
-		  width: 5px;
-		}
-		.star li:nth-child(6):after {
-		  width: 1px;
-		  height: 5px;
-		  top: -2px;
-		  left: 2px;
-		}
-
-		@keyframes fumes {
-		  50% {
-		    transform: scale(1.5);
-		    background-color: transparent;
-		  }
-		  51% {
-		    transform: scale(0.8);
-		  }
-		  100% {
-		    background-color: #f5f5f5;
-		    transform: scale(1);
-		  }
-		}
-		@keyframes bounce {
-		  0% {
-		    transform: translate3d(0px, 0px, 0);
-		  }
-		  50% {
-		    transform: translate3d(0px, -4px, 0);
-		  }
-		  100% {
-		    transform: translate3d(0px, 0px, 0);
-		  }
-		}
-		@keyframes exhaust {
-		  0% {
-		    background: linear-gradient(to bottom, transparent 10%, #f5f5f5 100%);
-		  }
-		  50% {
-		    background: linear-gradient(to bottom, transparent 8%, #f5f5f5 100%);
-		  }
-		  75% {
-		    background: linear-gradient(to bottom, transparent 12%, #f5f5f5 100%);
-		  }
-		}
-		@keyframes fumes2 {
-		  50% {
-		    transform: scale(1.1);
-		  }
-		}
-		@keyframes twinkle {
-		  80% {
-		    transform: scale(1.1);
-		    opacity: 0.7;
-		  }
-		}
-	</style>
-</head>
-<body>
-	<div class="text">
-		<a href="http://womenandcode.org/"><img src="WomenAndCode-header.png" alt="Women&amp;&amp;Code" width="600"></a>
-
-		<h1>
-		Women And Code
-		</h1>
-
-		<p>
-			A non-profit JavaScript learning group for women* in Vienna every second week starting on Sept. 18.
-		</p>
-		
-		Join us, if you're:
-		<ul>
-			<li>thrilled to learn something new</li>
-			<li>interested in coding/programming</li>
-			<li>exited about UI/UX and front-end development</li>
-			<li>eager to learn how to talk to the developers in your company</li>
-		</ul>
-
-		<p>
-			The first events are for programming beginners - but feel free to 
-join if you want to connect to other amazing people in Vienna!
-		</p>
-		<ul>
-			<li>The lectures will be held in English.</li>
-			<li>Participation is for free, but you need to reserve your seat with
- 9€, which will be transferred back on show-up - if you like, you can 
-also <a href="#donate">donate</a> this reservation fee or another amount!</li>
-			<li>Please bring your own notebook!</li>
-		</ul>
-
-		<h2>Our Next Events</h2>
-		<p>
-			<a href="https://www.meetup.com/WomenAndCode/events/khpndqyxmbxb/" target="_blank">&gt;&gt; Next Event 18.9.</a>
-			<br>
-			<a href="https://www.meetup.com/WomenAndCode/events/gdwtdqyxnbdb/" target="_blank">&gt;&gt; Next Event 2.10.</a>
-			<br>
-			<br>
-			We will teach lecture 1 at all events in separate groups! <a href="#contact">Problems</a> to register or <a href="#full">event full</a>?
-			<br>
-			<br>
-			<a href="https://facebook.com/womenandcode" target="_blank">&gt;&gt; Facebook Page</a>
-			<br>
-			<a href="https://www.meetup.com/WomenAndCode/" target="_blank">&gt;&gt; Meetup.com Group</a>
-		</p>
-		
-		<h2>Our Mission</h2>
-		<h3>It is important to inspire women to excel in technology careers</h3>
-		<p>
-			Diversity is very important for healthy networks, work relationships and our society in general. 
-			<br>
-			As positive role models we want to inspire other women to join in software engineering. 
-		</p>
-		<h3>We want to have an impact on our city</h3>
-		<p>
-			A new non-profit feminist network and meetup/event-series brings more
- women to tech and encourages women to help other women. 
-			<br>
-			We want to empower women through solidarity, ideas, impulses, 
-network, support, coaching, and sharing of knowledge. time, and space.
-		</p>
-
-		<h2>Code Of Conduct</h2>
-		<p>
-			<a href="http://berlincodeofconduct.org/" target="_blank">&gt;&gt; BerlinCodeOfConduct.org</a>
-		</p>
-
-		<h2>Learning Materials</h2>
-		<p>
-			<a href="https://github.com/orgs/WomenAndCode" target="_blank">&gt;&gt; Github Repository</a>
-		</p>
-
-		<h2>FAQ</h2>
-		<h3>Why should I join?</h3>
-		<p>
-			It is a great opportunity for you, if you are working in marketing, 
-design, or business collaborating with developers, or if you are 
-thinking about a career change, in order to become independent and make 
-more €€€, specially perfect for (single) mums!
-		</p>
-
-		<h3>How is teaching women different to teaching men or mixed classes?</h3>
-		<p>
-			Teaching a women-only class is in many aspects different to teaching 
-mixed classes, especially when teaching programming. On the one hand you
- could have the gender bias from a male instructor and on the other hand
- having even just one male student in class changes the whole 
-group-dynamic in the classroom: Strong women suddenly become shy and 
-don't dare to ask questions. With Women&amp;&amp;Code we want to offer 
-an open, inclusive, and non-threatening environment for women to learn 
-something male connotated.
-		</p>
-
-		<h3>How do you define 'women'?</h3>
-		<p>
-			The term 'woman' refers in this context as 'fem*' including people of
- all colors, shapes, and ages, including but not limited to cis fem, bi,
- trans, girlies and grannies, tomboys, cowgirls and the like.
-		</p>
-
-		<a id="full"></a>
-		<h3>The event is full, where is the waiting list?</h3>
-		<p>
-			If the event is fully booked and you missed your spot, please join our group <a href="https://www.meetup.com/WomenAndCode/" target="_blank">meetup.com/WomenAndCode</a> and we will inform you, when spots become available again.
-			<br>
-			<br>
-			Also feel free to register for the following event, we will teach lecture 1 and the following in separate groups!
-		</p>
-
-		<h3>Do you offer childcare?</h3>
-		<p>Please <a href="#contact">contact</a> us prior to the event so that we can arrange childcare for you!</p>
-
-		<h3>I like your project, how can I help?</h3>
-		<p>
-			First of all: Thank you!! 
-			<br>
-			And second: You can help us the most through sharing our events! Bring for instance your colleague from marketing, your sister or fellow students and many more to our events.
-			<br>
-			Alumni students will also be offered the opportunity to mentor new students throughout our event series.
-			<br>
-			We are also very happy to humbly accept any donations you can give us. &lt;3
-		</p>
-		
-		<a id="donate"></a>
-		<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-			<input type="hidden" name="cmd" value="_s-xclick">
-			<input type="hidden" name="hosted_button_id" value="NZPF2R95DUDME">
-			<input type="image" src="https://www.paypalobjects.com/en_US/AT/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-			<img alt="" border="0" src="https://www.paypalobjects.com/de_DE/i/scr/pixel.gif" width="1" height="1">
-    	</form>
-
-		<h2>Sponsors and Partners</h2>
-		<a href="http://chatbotsagency.com/" target="_blank"><img src="http://chatbots-agency.at/wp-content/uploads/2017/07/logo-chatbots-agency.png" alt="Chatbots Agency" width="100" height="116"></a>
-
-		<h2>Press</h2>
-		<a href="https://www.trendingtopics.at/women-and-code-neues-wiener-projekt-bietet-kostenlose-programmierkurse-fuer-frauen-an/"><img src="https://www.trendingtopics.at/wp-content/themes/trendingtopics/images/logo-one-line.svg" alt="Trending Topics" width="100" height="100"></a>
-
-		<a id="contact"></a>
-		<h2>Contact</h2>
-		<p>
-			Please write us either on our Facebook page or in our meetup.com Group:
-			<br>
-			<a href="https://facebook.com/womenandcode" target="_blank">&gt;&gt; Facebook Page</a>
-			<br>
-			<a href="https://www.meetup.com/WomenAndCode/" target="_blank">&gt;&gt; Meetup.com Group</a>
-		</p>
-
-		<p>
-			<a href="http://womenandcode.org/"><img src="WomenAndCode.png" alt="Women&amp;&amp;Code" width="100" height="100"></a>
-			<br>
-			(c) 2018 <a href="https://medium.com/@eva_trostlos" target="_blank">Eva Lettner</a> &amp;&amp; <a href="https://electrobabe.at/" target="_blank">Barbara Ondrisek</a> &lt;3
-			<br>
-			<a href="https://codepen.io/eva_trostlos/pen/akQoLN" target="_blank">CSS only rocket</a> by Eva
-		</p>
-	</div>
-
-	<div class="rocket">
-	    <div class="rocket-body">
-	      <div class="body"></div>
-	      <div class="fin fin-left"></div>
-	      <div class="fin fin-right"></div>
-	      <div class="window"></div>
-	    </div>
-	    <div class="exhaust-flame"></div>
-	    <ul class="exhaust-fumes">
-	      <li></li>
-	      <li></li>
-	      <li></li>
-	      <li></li>
-	      <li></li>
-	      <li></li>
-	      <li></li>
-	      <li></li>
-	      <li></li>
-	    </ul>
-	    <ul class="star">
-	      <li></li>
-	      <li></li>
-	      <li></li>
-	      <li></li>
-	      <li></li>
-	      <li></li>
-	      <li></li>
-	    </ul>
-	</div>
-
-
-</body></html>
+      </p>
+      <p>We want to empower women through solidarity, ideas, impulses, network, support, coaching, and
+        sharing knowledge, time and space.
+      </p>
+    </div>
+    </section>
+    <section class="faq">
+      <div class="container">
+        <h1>FAQ</h1>
+        <h2>Why should I join?</h2>
+        <p>It is a great opportunity for you if you are working in marketing, design, or a business collaborating with 
+          developers, or if you are thinking about a career change in order to become independent and make more money. 
+          Tech is especially perfect for (single) mums!
+        </p>
+        <h2>How s teaching women differnt to teaching men or mixed classes?</h2>
+        <p>Teaching a women-only class is in many aspects different to teaching mixed classes, especially when teaching
+          programming. On the one hand you could have gender bias from a male instructor and on the other hand having
+          even just one male student in class changes the whole group dynamic in the classroom. Some women suddenly don't 
+          dare to ask questions. With Women and Code we want to offer an open, inclusive, and non-threatening environment
+          for women to learn.
+        </p>
+        <h2>How do you define 'women'?</h2>
+        <p>The term 'woman' includes people of all colors, shapes, and ages, including but not limited to cis fem, bi,
+          trans, girlies and grannies, tomboys and the like.
+        </p>
+        <div id="full">
+        <h2>The event is full, where is the waiting list?</h2>
+        <p>If the event is fully booked and you missed your spot, please join our 
+          <a href="http://www.meetup.com/WomenAndCode" target="_blank">meetup-group</a> and we will inform you when a spot
+          opens up. <br>
+          Feel free to register for the next event, you will always be able to start with lesson 1.
+        </p>
+      </div>
+        <h2>Do you offer childcare?</h2>
+        <p>Please contact us prior to the event so we can arrange childcare for you!</p>
+        <h2>I like your project, how can I help?</h2>
+        <p>First of all: Thank you! <br>
+        And second: You can help us by sharing our events! Alumni students will also get the chance to mentor new students. <br>
+        
+         </p>
+         <div class="donate" id="donate">
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+              <input type="hidden" name="cmd" value="_s-xclick">
+              <input type="hidden" name="hosted_button_id" value="NZPF2R95DUDME">
+              <input type="image" src="https://www.paypalobjects.com/en_US/AT/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+              <img alt="" border="0" src="https://www.paypalobjects.com/de_DE/i/scr/pixel.gif" width="1" height="1">
+              </form>
+            
+         </div>
+      </div>
+    </section>
+    <section class="sponsors">
+      <div class="container">
+      <h1>Sponsors and Partners</h1>
+      <h2>Sponsors and Partners</h2>
+      <a href="http://chatbotsagency.com/" target="_blank"><img src="http://chatbots-agency.at/wp-content/uploads/2017/07/logo-chatbots-agency.png" alt="Chatbots Agency" width="100" height="116"></a>
+  
+      <h2>Press</h2>
+      <a href="https://www.trendingtopics.at/women-and-code-neues-wiener-projekt-bietet-kostenlose-programmierkurse-fuer-frauen-an/"><img src="https://www.trendingtopics.at/wp-content/themes/trendingtopics/images/logo-one-line.svg" alt="Trending Topics" width="100" height="100"></a>
+    </div>
+    </section>
+    </main>
+    <footer>
+        (c) 2018 Eva Lettner && Barbara Ondrisek &hearts;
+    </footer>
+  </body>
+</html>
