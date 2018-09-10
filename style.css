@@ -83,3 +83,34 @@ footer {
     padding: 1rem 1rem 2rem;
   }
 }
+
+.item-container {
+  text-align: left;
+  font-size: 0;
+  display: flex;
+}
+
+.item {
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  -webkit-box-align: center;
+  margin: 0;
+  width: 20%;
+  float: left;
+  border: 0;
+}
+
+.item-img {
+  max-width: 160px;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: content-box;
+}
+
+.img-title {
+  font-size: 14px;
+  text-align: center;
+  width: 680px;
+}
