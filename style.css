@@ -6,7 +6,7 @@ body {
 }
 
 a {
-  color: #ff0047;
+  color: #bf231b;
   font-weight: bold;
 }
 
@@ -58,7 +58,7 @@ section.faq h1, h2, section.sponsors h1, h2 {
 button {
   margin: 3rem 0 0;
   padding: 1rem 3rem;
-  background: #ff0047;
+  background: #bf231b;
   border-radius: 50px; 
   border: none;
   color: white;
