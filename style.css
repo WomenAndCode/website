@@ -37,18 +37,22 @@ section h1 {
   width: 70%;
 }
 
-section.events {
+section.events, section.sponsors {
   background: #40dce4;
   color: black;
 }
 
-section.faq, section.sponsors {
+section.faq {
   background: white;
   color: black;
 }
 
-section.faq h1, h2, section.sponsors h1, h2 {
+section.faq h1, h2 {
   color: #40dce4;
+}
+
+section.sponsors h2, section.events h2 {
+  color: white;
 }
 
 .donate {
