@@ -107,7 +107,7 @@ footer {
 }
 
 .item-img {
-  max-width: 160px;
+  max-width: 170px;
   width: 100%;
   margin: 0 auto;
   box-sizing: content-box;
@@ -116,5 +116,5 @@ footer {
 .img-title {
   font-size: 14px;
   text-align: center;
-  width: 680px;
+  width: 550px;
 }
