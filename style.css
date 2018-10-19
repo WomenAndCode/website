@@ -55,6 +55,10 @@ section.sponsors h2, section.events h2 {
   color: white;
 }
 
+section.events h3 {
+  color: white;
+}
+
 .donate {
   text-align: center;
 }
@@ -117,4 +121,32 @@ footer {
   font-size: 14px;
   text-align: center;
   width: 550px;
+}
+
+.btn {
+  background-color:#003041;
+  border-radius:30px; 
+  -moz-border-radius:30px; 
+  -webkit-border-radius:30px;
+  display: inline-block;
+  height: 60px;
+  border: 0 none;
+  font-size: 16px;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  font-weight: 700;
+  background-image: none;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
