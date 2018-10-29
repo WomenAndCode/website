@@ -39,24 +39,32 @@ section h1 {
 
 section.events, section.sponsors {
   background: #40dce4;
-  color: black;
+  color: #003041;
 }
 
 section.faq {
   background: white;
-  color: black;
+  color: #003041;
 }
 
-section.faq h1, h2 {
+section.faq h1 {
   color: #40dce4;
 }
 
-section.sponsors h2, section.events h2 {
-  color: white;
+section.faq h2 {
+  color: #003041;
+}
+
+section.events h2 {
+  color: #003041;
+}
+
+section.sponsors h2 {
+  color: #003041;
 }
 
 section.events h3 {
-  color: white;
+  color: #003041;
 }
 
 .donate {
@@ -148,6 +156,10 @@ footer {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+.btn-turquoise {
+  background-color: #40dce4;
 }
 
 .btn-white {
