@@ -37,6 +37,12 @@ section h1 {
   width: 70%;
 }
 
+.main-menu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 section.events, section.sponsors {
   background: #40dce4;
   color: #003041;
@@ -88,17 +94,6 @@ footer {
 }
 
 
-@media (max-width: 600px) {
-  header img {
-    width: 250px;
-  }
-  .container {
-    width: 90%;
-  }
-  section {
-    padding: 1rem 1rem 2rem;
-  }
-}
 
 .item-container {
   text-align: left;
@@ -164,4 +159,26 @@ footer {
 
 .btn-white {
   background-color: #ffffff;
+}
+
+@media (max-width: 600px) {
+  header img {
+    width: 250px;
+  }
+  .container {
+    width: 90%;
+  }
+  section {
+    padding: 1rem 1rem 2rem;
+  }
+  .img-workshop img{
+    max-width: 100%;
+  }
+  .img-title{
+    text-align: left;
+    font-size: 14px;
+  }
+  .btn-white{
+position: inherit;
+  }
 }
